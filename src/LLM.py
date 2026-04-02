@@ -1,4 +1,6 @@
-from transformers import pipeline
+from transformers import pipeline, logging
+
+logging.set_verbosity_error()
 
 chatbot = pipeline(
     "text-generation",
@@ -11,6 +13,7 @@ def get_llm_response(user_input: str) -> str:
     response = chatbot(
         prompt,
         max_new_tokens=100,
+        max_length=None,
         do_sample=True,
         temperature=0.7
     )
@@ -19,6 +22,9 @@ def get_llm_response(user_input: str) -> str:
     return output.strip()
 
 if __name__ == "__main__":
+    import warnings
+    warnings.filterwarnings("ignore")
+    
     print("Modern AI Chatbot")
     print("Type 'quit' to stop.\n")
 
