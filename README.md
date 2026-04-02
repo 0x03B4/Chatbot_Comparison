@@ -16,6 +16,6 @@
 │       ├── Part_1_Eliza_Conversation.png
 │       ├── Part_2_LLM_Conversation.png
 │       ├── Part_3_Chat_Comparison_1.png
-│       └── Part_3_Chat_Comparison_1.png.png
+│       └── Part_3_Chat_Comparison_2.png
 └── uv.lock
 ```
