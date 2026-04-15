@@ -1,7 +1,6 @@
 ```
 .
 ├── LICENSE
-├── main.py
 ├── pyproject.toml
 ├── README.md
 ├── src
